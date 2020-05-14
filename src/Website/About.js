@@ -7,7 +7,7 @@ const About = (props) => {
   return (
     <div>
       <Navbar bg="dark" variant = "dark">
-      <Navbar.Brand href="/"><img src = {Logo} alt = "Logo"/></Navbar.Brand>
+      <Navbar.Brand><img src = {Logo} alt = "Logo"/></Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link href="/">About</Nav.Link>
         <Nav.Link href="/skills">Skills</Nav.Link>
