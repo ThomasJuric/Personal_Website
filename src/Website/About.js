@@ -1,13 +1,13 @@
 import React from 'react';
 import './style.css'
+import Logo from "./forLogo.png";
 import {Navbar, Nav, Card} from 'react-bootstrap';
-    
 const About = (props) => {
     
   return (
     <div>
       <Navbar bg="dark" variant = "dark">
-      <Navbar.Brand href="/">Thomas Juric</Navbar.Brand>
+      <Navbar.Brand href="/"><img src = {Logo} alt = "Logo"/></Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link href="/">About</Nav.Link>
         <Nav.Link href="/skills">Skills</Nav.Link>

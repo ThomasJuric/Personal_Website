@@ -1,5 +1,6 @@
 import React from 'react';
-import './style.css'
+import './style.css';
+import Logo from "./forLogo.png";
 import {Navbar, Nav, Card, Col, Container, Row} from 'react-bootstrap';
     
 const Skills = (props) => {
@@ -7,7 +8,7 @@ const Skills = (props) => {
   return (
     <div>
       <Navbar bg="dark" variant = "dark">
-      <Navbar.Brand href="/skills">Thomas Juric</Navbar.Brand>
+      <Navbar.Brand href="/skills"><img src = {Logo} alt = "Logo"/></Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link href="/">About</Nav.Link>
         <Nav.Link href="/skills">Skills</Nav.Link>
@@ -33,7 +34,7 @@ const Skills = (props) => {
                 </ul>
               </Col>
               <Col className = "forBigger">
-                <h3 class = "text-muted" id = "toolsAndTech">Tools & Technologies</h3>
+                <h3 className = "text-muted" id = "toolsAndTech">Tools & Technologies</h3>
                 <ul id = "toolsList">
                     <li>NodeJS <img id = "langPhoto" src="https://img.icons8.com/color/48/000000/nodejs.png" alt = "NodeJS"/></li>
                     <li>Selenium <img id = "langPhoto" src="https://img.icons8.com/ultraviolet/40/000000/selenium-test-automation.png" alt = "Selenium"/></li>
@@ -47,7 +48,7 @@ const Skills = (props) => {
             </Row>
             <Row className = "forSmaller">
               <Col>
-                <h3 class = "text-muted" id = "toolsAndTech">Tools & Technologies</h3>
+                <h3 className = "text-muted" id = "toolsAndTech">Tools & Technologies</h3>
                 <ul id = "toolsList">
                     <li>NodeJS <img id = "langPhoto" src="https://img.icons8.com/color/48/000000/nodejs.png" alt = "NodeJS"/></li>
                     <li>Selenium <img id = "langPhoto" src="https://img.icons8.com/ultraviolet/40/000000/selenium-test-automation.png" alt = "Selenium"/></li>

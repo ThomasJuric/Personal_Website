@@ -1,5 +1,6 @@
 import React from 'react';
-import './style.css'
+import './style.css';
+import Logo from "./forLogo.png";
 import {Navbar, Nav, Button, Card, Row, Col, Container} from 'react-bootstrap';
     
 const Projects = (props) => {
@@ -7,7 +8,7 @@ const Projects = (props) => {
   return (
     <div>
       <Navbar bg="dark" variant = "dark">
-      <Navbar.Brand href="/skills">Thomas Juric</Navbar.Brand>
+      <Navbar.Brand href="/skills"><img src = {Logo} alt = "Logo"/></Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link href="/">About</Nav.Link>
         <Nav.Link href="/skills">Skills</Nav.Link>
