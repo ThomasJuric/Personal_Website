@@ -53,13 +53,27 @@ const Projects = (props) => {
             <Row>
               <Container>
                 <Col>
-                  <h3>My Old Website</h3>
+                  <h3>Previous Personal Website</h3>
                   <p className = "projectDesc">
                     A website I developed with minimal use of Bootstrap, 
                     similar to this one in content.
                   </p>
                   <Button className = "buttonForWeb text-center" href ="https://thomas19.netlify.app/" display = "block">
-                    <span className = "textInButton">Older Website!</span>
+                    <span className = "textInButton">Previous Website!</span>
+                  </Button>
+                </Col>
+              </Container>
+            </Row>
+            <hr className = "underlineProj"></hr>
+            <Row>
+              <Container>
+                <Col>
+                  <h3>Friend's Art Portfolio</h3>
+                  <p className = "projectDesc">
+                    A Website I developed for my Friend's Art Portfolio using React.
+                  </p>
+                  <Button className = "buttonForFriend text-center" href ="https://jlenn.net" display = "block">
+                    <span className = "textFriend">Check Out Website!</span>
                   </Button>
                 </Col>
               </Container>

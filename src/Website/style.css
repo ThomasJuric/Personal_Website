@@ -99,6 +99,19 @@ h3 {
     vertical-align: middle;
     color: rgba(255, 255, 255, 0.651);
 }
+.textFriend {
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.651);
+    font-size: bolder;
+}
+.buttonForFriend {
+    height: 50px;
+    text-align: center;
+    color: #141414;
+    background-color: rgba(184, 163, 163, 0.493);
+    border-color: rgb(0, 0, 0);
+    border-width: 3px;
+}
 
 @media screen and (max-width: 720px) {
     .forSmaller{ 
