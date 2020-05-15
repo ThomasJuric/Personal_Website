@@ -36,10 +36,10 @@ const Skills = (props) => {
               <Col className = "forBigger">
                 <h3 className = "text-muted" id = "toolsAndTech">Tools & Technologies</h3>
                 <ul id = "toolsList">
+                    <li>React <img id = "langPhoto" src="https://img.icons8.com/nolan/64/react-native.png" alt = "React"/></li>
                     <li>NodeJS <img id = "langPhoto" src="https://img.icons8.com/color/48/000000/nodejs.png" alt = "NodeJS"/></li>
                     <li>Selenium <img id = "langPhoto" src="https://img.icons8.com/ultraviolet/40/000000/selenium-test-automation.png" alt = "Selenium"/></li>
                     <li>Linux <img id = "langPhoto" src="https://img.icons8.com/color/48/000000/linux.png" alt = "Linux" /></li>
-                    <li>React <img id = "langPhoto" src="https://img.icons8.com/nolan/64/react-native.png" alt = "React"/></li>
                     <li>Git <img id = "langPhoto" src="https://img.icons8.com/color/48/000000/git.png" alt = "Git" /></li>
                     <li>Bootstrap <img id = "langPhoto" src="https://img.icons8.com/color/48/000000/bootstrap.png" alt = "Bootstrap"/></li>
                     <li>Visual Studio Code <img id = "langPhoto" src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png" alt = "Visual Studio Code"/></li>
@@ -50,10 +50,10 @@ const Skills = (props) => {
               <Col>
                 <h3 className = "text-muted" id = "toolsAndTech">Tools & Technologies</h3>
                 <ul id = "toolsList">
+                    <li>React <img id = "langPhoto" src="https://img.icons8.com/nolan/64/react-native.png" alt = "React"/></li>
                     <li>NodeJS <img id = "langPhoto" src="https://img.icons8.com/color/48/000000/nodejs.png" alt = "NodeJS"/></li>
                     <li>Selenium <img id = "langPhoto" src="https://img.icons8.com/ultraviolet/40/000000/selenium-test-automation.png" alt = "Selenium"/></li>
                     <li>Linux <img id = "langPhoto" src="https://img.icons8.com/color/48/000000/linux.png" alt = "Linux" /></li>
-                    <li>React <img id = "langPhoto" src="https://img.icons8.com/nolan/64/react-native.png" alt = "React"/></li>
                     <li>Git <img id = "langPhoto" src="https://img.icons8.com/color/48/000000/git.png" alt = "Git" /></li>
                     <li>Bootstrap <img id = "langPhoto" src="https://img.icons8.com/color/48/000000/bootstrap.png" alt = "Bootstrap"/></li>
                     <li>Visual Studio Code <img id = "langPhoto" src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png" alt = "Visual Studio Code"/></li>
