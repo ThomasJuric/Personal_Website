@@ -6,14 +6,17 @@
     text-align: center;
 }
 body {
-    background-color: #141414;
+    background-color: #4c5058;
 }
 a {
     color:inherit;
 }
-
+.textForCard {
+    text-align: center;
+    font-size: 15px;
+}
 .card {
-    background-color: #36363667;
+    background-color: #363636ee;
     color: rgba(255, 255, 255, 0.842);
     width: 80%;
     display: flex;
@@ -23,6 +26,10 @@ a {
 }
 h1 {
     font-family: 'Roboto', sans-serif;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 h3 {
     font-family: 'Didact Gothic', sans-serif;
@@ -60,6 +67,11 @@ h3 {
     color: white;
     text-align: center;
     font-size: 15px;
+}
+.contactInfo {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .langList {
     position: relative;

@@ -13,6 +13,7 @@ const Skills = (props) => {
         <Nav.Link href="/">About</Nav.Link>
         <Nav.Link href="/skills">Skills</Nav.Link>
         <Nav.Link href="/projects">Projects</Nav.Link>
+        <Nav.Link href="/contact">Contact Me</Nav.Link>
       </Nav>
       </Navbar>
       <div className = "myCard">
@@ -25,7 +26,7 @@ const Skills = (props) => {
               <Col>
                 <h3 className = "text-muted" id = "TheLangagues">Languages</h3>
                 <ul id = "langList">
-                    <li>C Programming Language<img id = "langPhoto" alt = "C" src="https://img.icons8.com/color/48/000000/c-programming.png"/></li>
+                    <li>C Language<img id = "langPhoto" alt = "C" src="https://img.icons8.com/color/48/000000/c-programming.png"/></li>
                     <li>Python <img id = "langPhoto" alt = "Python" src="https://img.icons8.com/color/48/000000/python.png"/></li>
                     <li>Java <img id = "langPhoto" alt = "Java" src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png"/></li>
                     <li>Javascript <img id = "langPhoto" alt = "Javascript" src="https://img.icons8.com/color/48/000000/javascript.png"/></li>

@@ -12,6 +12,7 @@ const About = (props) => {
         <Nav.Link href="/">About</Nav.Link>
         <Nav.Link href="/skills">Skills</Nav.Link>
         <Nav.Link href="/projects">Projects</Nav.Link>
+        <Nav.Link href="/contact">Contact Me</Nav.Link>
       </Nav>
       </Navbar>
       <div className = "myCard">
@@ -27,7 +28,7 @@ const About = (props) => {
               development skillset.
             </Card.Text>
             <Card.Text className = "cardText">
-              Aside from being a student, I enjoy playing basketball, hanging out with friends, and watching Netflix. 
+              Aside from being a student, I enjoy playing basketball, keeping up with sports, hanging out with friends, and watching Netflix. 
               If you have any questions for me, feel free to shoot me an E-Mail.
             </Card.Text>
           </Card.Body>

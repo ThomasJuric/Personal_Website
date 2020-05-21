@@ -13,8 +13,9 @@ const Projects = (props) => {
         <Nav.Link href="/">About</Nav.Link>
         <Nav.Link href="/skills">Skills</Nav.Link>
         <Nav.Link href="/projects">Projects</Nav.Link>
+        <Nav.Link href="/contact">Contact Me</Nav.Link>
       </Nav>
-      </Navbar>
+    </Navbar>
       <div className = "myCard">
           <Card className = "vertical-center horizontal-center mx-auto">
           <Card.Body>
