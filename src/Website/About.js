@@ -24,12 +24,12 @@ const About = (props) => {
             <Card.Text className = "cardText">
               Hey, my name is Thomas and I'm currently a second-year student studying towards a Bachelor of Computing Degree, 
               with a major in Computer Science. This is my personal website, where I plan to display my projects, skills, 
-              experience, and anything else about me. I developed this website using React as a way to increase my web 
+              experience, and anything else about me. I developed this website using React as a way to increase and showcase my web 
               development skillset.
             </Card.Text>
             <Card.Text className = "cardText">
               Aside from being a student, I enjoy playing basketball, keeping up with sports, hanging out with friends, and watching Netflix. 
-              If you have any questions for me, feel free to shoot me an E-Mail.
+              If you have any questions, feel free to shoot me an E-Mail.
             </Card.Text>
           </Card.Body>
             <Card.Footer className = "mx-auto">

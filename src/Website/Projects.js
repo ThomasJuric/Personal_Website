@@ -42,9 +42,14 @@ const Projects = (props) => {
                   <h3>Price Check</h3>
                   <p className = "projectDesc">
                     A program developed in Python that searches for the 
-                    cheapest price of a given product.
+                    cheapest price of a given product. This program was developed 
+                    using BeautifulSoup to parse the HTML from different pages, 
+                    and the information of the cheapest available product is shown to the user, 
+                    as well as a link to the desired product. Shopping websites that are searched 
+                    as of now include Amazon.com and eBay.com, where the cheapest product is found 
+                    from both of these sites.
                   </p>
-                  <Button className = "buttonForPCheck text-center" href ="https://github.com/ThomasJuric/priceCheck" display = "block">
+                  <Button className = "buttonForPCheck text-center" href ="https://github.com/ThomasJuric/Price_Check_V2" display = "block">
                     <span className = "textInButton">Check out the code!</span>
                   </Button>
                 </Col>
