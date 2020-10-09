@@ -26,16 +26,15 @@ const Projects = (props) => {
                 <Col>
                   <h3>Tic-Tac-Toe Web Application</h3>
                   <p className = "projectDesc">
-                    A simple Tic-Tac-Toe web application developed by me using
-                    Javascript, express, JQuery, and hosted on a NodeJS server. 
+                    This is a tic-tac-toe web application that I developed using HTML, CSS, and JavaScript. I used the minimax algorithm to determine the best possible move for the computer, so it's pretty hard.
                   </p>
-                  <Button className = "buttonForGame text-center" href ="https://my-tic-tac-toe-web-app.herokuapp.com/" display = "block">
-                    <span className = "textInButton">Play Tic-Tac-Toe!</span>
+                  <Button className = "buttonForGame text-center" href ="https://tic-tac-thomas.netlify.app/" display = "block">
+                    <span className = "textInButton">Try the game</span>
                   </Button>
                 </Col>
               </Container>
             </Row>
-            <hr className = "underlineProj"></hr>
+            {/* <hr className = "underlineProj"></hr>
             <Row>
               <Container>
                 <Col>
@@ -54,7 +53,7 @@ const Projects = (props) => {
                   </Button>
                 </Col>
               </Container>
-            </Row>
+            </Row> */}
             <hr className = "underlineProj"></hr>
             <Row>
               <Container>

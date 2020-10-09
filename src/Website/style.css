@@ -6,7 +6,7 @@
     text-align: center;
 }
 body {
-    background-color: #4c5058;
+    background-color: #000000ec;
 }
 a {
     color:inherit;
@@ -16,7 +16,7 @@ a {
     font-size: 15px;
 }
 .card {
-    background-color: #363636ee;
+    background-color: #2e2e2eee;
     color: rgba(255, 255, 255, 0.842);
     width: 80%;
     display: flex;
