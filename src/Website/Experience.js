@@ -1,12 +1,13 @@
 import React from 'react';
-import './style.css'
+import './style.css';
 import Logo from "./forLogo.png";
-import {Navbar, Nav, Card} from 'react-bootstrap';
-const About = (props) => {
+import {Navbar, Nav, Card, Row, Container} from 'react-bootstrap';
+    
+const Projects = (props) => {
     
   return (
     <div>
-      <Navbar  bg="dark" variant = "dark">
+      <Navbar bg="dark" variant = "dark">
       <Navbar.Brand href = "/"><img src = {Logo} alt = "Logo"/></Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link href="/">About</Nav.Link>
@@ -15,23 +16,32 @@ const About = (props) => {
         <Nav.Link href="/experience">Experience</Nav.Link>
         <Nav.Link href="/contact">Contact</Nav.Link>
       </Nav>
-      </Navbar>
+    </Navbar>
       <div className = "myCard">
           <Card className = "vertical-center horizontal-center mx-auto">
           <Card.Body>
-            <Card.Title ><h1>Thomas Juric</h1></Card.Title>
-            <Card.Subtitle className="mb-3 text-muted subtitle">Computer Science Student</Card.Subtitle>
+            <Card.Title ><h1>Experience</h1></Card.Title>
             <hr className = "underline"></hr>
-            <Card.Text className = "cardText">
-              Hey, my name is Thomas and I'm currently a second-year student studying towards a Bachelor of Computing Degree, 
-              with a major in Computer Science. This is my personal website, where I plan to display my projects, skills, 
-              experience, and anything else about me. I developed this website using React as a way to increase and showcase my web 
-              development skillset.
-            </Card.Text>
-            <Card.Text className = "cardText">
-              Aside from being a student, I enjoy playing basketball, keeping up with sports, hanging out with friends, and watching Netflix. 
-              If you have any questions, feel free to shoot me an E-Mail.
-            </Card.Text>
+            <Row>
+                <Container>
+                    <h3>Website Training & Support Specialist</h3>
+                    <Card.Subtitle className="mb-3 text-muted subtitle">August 2020 - January 2021 • Remote</Card.Subtitle>
+                    <div>
+                        <ul>
+                            <li>Developed & maintained public and developmental websites under the University of Guelph domain.</li>
+                            <li>Used tools such as HTML, CSS, Drupal, Pantheon, SharePoint, & Gatsby to develop and improve existing websites.</li>
+                            <li>Created documentation to construct client training for tools such as SharePoint.</li>
+                            <li>Carried out Weekly Trainings for Clients for the Drupal CMS to assist them with learning the necessary tools to make their own site edits.</li>
+                            <li>Participated in Weekly Agile & Scrum Meeting with the team to divide up work ahead.</li>
+                            {/* <li>Assisted with the onboarding process with the new Co-op student.</li> */}
+                        </ul>
+                    </div>
+                </Container>
+                
+            </Row>
+            
+            
+            
           </Card.Body>
             <Card.Footer className = "mx-auto">
                   <div className="column">
@@ -57,9 +67,9 @@ const About = (props) => {
         <p>
             This Website is Property of Thomas Juric &copy;
         </p>
-      </div> */}
+    </div> */}
     </div>
   );
 }
 
-export default About;
+export default Projects;

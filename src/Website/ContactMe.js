@@ -6,11 +6,12 @@ const ContactMe = (props) => {
 return (
   <div>
   <Navbar bg="dark" variant = "dark">
-      <Navbar.Brand><img src = {Logo} alt = "Logo"/></Navbar.Brand>
+  <Navbar.Brand href = "/"><img src = {Logo} alt = "Logo"/></Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link href="/">About</Nav.Link>
         <Nav.Link href="/skills">Skills</Nav.Link>
         <Nav.Link href="/projects">Projects</Nav.Link>
+        <Nav.Link href="/experience">Experience</Nav.Link>
         <Nav.Link href="/contact">Contact</Nav.Link>
       </Nav>
     </Navbar>
