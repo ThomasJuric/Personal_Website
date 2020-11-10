@@ -5,40 +5,62 @@
 .nav {
     text-align: center;
 }
+.mobileNav {
+    visibility: hidden;
+}
+.largerNav {
+    visibility: visible;
+    width: 100%;
+}
 body {
-    background-color: #000000ec;
+	background: linear-gradient(90deg, #742712, #292727, #032b50, #128d70);
+	background-size: 400% 400%;
+	animation: gradient 75s ease infinite;
 }
-a {
-    color:inherit;
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
-.textForCard {
-    text-align: center;
-    font-size: 15px;
-}
+
 .card {
-    background-color: #2e2e2eee;
-    color: rgba(255, 255, 255, 0.842);
-    width: 80%;
+    background-color: #E4E8EC;
+    color: #474072;
+    width: 70%;
     display: flex;
 }
+p, li {
+    font-size: 20px;
+}
 .myCard {
-    padding-top: 3%;
+    padding-top: 2.5%;
+}
+.contactBox {
+    text-align: center;    
 }
 h1 {
     font-family: 'Roboto', sans-serif;
 }
 h2 {
     font-family: 'Roboto', sans-serif;
-    text-align: center;
 }
 h3 {
     font-family: 'Didact Gothic', sans-serif;
+    font-weight: bolder;
 }
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
     float: left;
     padding-left: 10px;
     z-index: 4;
+    font-size: 4em;
 }
 /* .underline {
     color: white;
@@ -72,6 +94,7 @@ h3 {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
+    /* font-size: 3.02em; */
 }
 .langList {
     position: relative;
@@ -80,50 +103,30 @@ h3 {
     display: none;
 }
 .projectDesc {
-    width: 55%;
-    float: left;
+    display: inline-block;
 }
 .underline {
     background-color: rgba(245, 245, 245, 0.363);
 }
-.buttonForGame {
+
+.theProjBtn {
     height: 50px;
     text-align: center;
-    background-color: rgba(8, 14, 97, 0.253);
-    border-color: rgba(255, 255, 255, 0.575);
+    background-color: #FFFFFF;
+    border-color:#0D0D0D;
+    margin-left: 2.5%;
+    width: 50%;
 }
-.buttonForPCheck {
-    height: 50px;
-    text-align: center;
-    background-color: rgba(105, 8, 37, 0.233);
-    border-color: rgba(255, 255, 255, 0.575);
-}
+
 .underlineProj {
     background-color: rgba(252, 236, 217, 0.288);
 }
-.buttonForWeb {
-    height: 50px;
-    text-align: center;
-    background-color: rgba(105, 39, 8, 0.226);
-    border-color: rgba(255, 255, 255, 0.575);
-}
-.textInButton {
+.btnText {
+    color: #0D0D0D;
     vertical-align: middle;
-    color: rgba(255, 255, 255, 0.651);
 }
-.textFriend {
-    vertical-align: middle;
-    color: rgba(0, 0, 0, 0.651);
-    font-size: bolder;
-}
-.buttonForFriend {
-    height: 50px;
-    text-align: center;
-    color: #141414;
-    background-color: rgba(184, 163, 163, 0.493);
-    border-color: rgb(0, 0, 0);
-    border-width: 3px;
-}
+
+
 
 @media screen and (max-width: 720px) {
     .forSmaller{ 
@@ -134,6 +137,43 @@ h3 {
     }
     p {
         width: 95%;
+    }
+    .card {
+        background-color: #E4E8EC;
+        color: #474072;
+        width: 80%;
+        display: flex;
+    }
+    .theProjBtn {
+        margin-left: 9%;
+        width: 100%;
+    }
+    .mobileNav {
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .largerNav {
+        visibility: hidden;
+        width: 100%;
+
+    }
+    body {
+        background: linear-gradient(90deg, #411002, #000000, #0e5c79, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 16s ease infinite;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
     }
 
 }

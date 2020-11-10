@@ -1,21 +1,44 @@
 import React from 'react';
 import './style.css'
 import Logo from "./forLogo.png";
-import {Navbar, Nav, Card} from 'react-bootstrap';
+import {Navbar, Nav, Card, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 const About = (props) => {
     
   return (
     <div>
-      <Navbar  bg="dark" variant = "dark">
-      <Navbar.Brand href = "/"><img src = {Logo} alt = "Logo"/></Navbar.Brand>
-      <Nav className="mr-auto">
-        <Nav.Link href="/">About</Nav.Link>
-        <Nav.Link href="/skills">Skills</Nav.Link>
-        <Nav.Link href="/projects">Projects</Nav.Link>
-        <Nav.Link href="/experience">Experience</Nav.Link>
-        <Nav.Link href="/contact">Contact</Nav.Link>
-      </Nav>
-      </Navbar>
+      <div className = "largerNav">
+        <Navbar  bg="dark" variant = "dark">
+        <Navbar.Brand href = "/">TJ</Navbar.Brand>
+        <Nav className="mr-auto">
+          <Nav.Link href="/">About</Nav.Link>
+          <Nav.Link href="/skills">Skills</Nav.Link>
+          <Nav.Link href="/projects">Projects</Nav.Link>
+          <Nav.Link href="/experience">Experience</Nav.Link>
+          <Nav.Link href="/contact">Contact</Nav.Link>
+        </Nav>
+        </Navbar>
+      </div>
+
+      <div className = "mobileNav">
+        <Navbar bg="dark" variant="dark">
+            <Navbar.Brand href="/">TJ</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="mr-auto">
+                <NavDropdown title="Navigation" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/">About</NavDropdown.Item>
+                  <NavDropdown.Item href="/skills">Skills</NavDropdown.Item>
+                  <NavDropdown.Item href="/projects">Projects</NavDropdown.Item>
+                  <NavDropdown.Item href="/experience">Experience</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/contact">Contact Me</NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+        </div>
       <div className = "myCard">
           <Card className = "vertical-center horizontal-center mx-auto">
           <Card.Body>
@@ -34,19 +57,19 @@ const About = (props) => {
             </Card.Text>
           </Card.Body>
             <Card.Footer className = "mx-auto">
-                  <div className="column">
+              <div className="column">
                       <a href ="mailto:thomasjuric@gmail.com" display = "block" width = "2px">
-                          <i className="fa fa-envelope icon fa-4x"></i>
+                          <FontAwesomeIcon icon={["fa", "envelope"]} />
                       </a>
                   </div>
                   <div className = "column">
                       <a href ="https://github.com/ThomasJuric" display = "block" width = "2px">
-                          <i className="fa fa-github-square icon fa-4x" aria-hidden="true"></i>
+                        <FontAwesomeIcon icon={["fab", "github"]} />
                       </a>
                   </div>
                   <div className = "column">
                       <a href ="https://www.linkedin.com/in/thomasjuric" display = "block" width = "2px">
-                          <i className="fa fa-linkedin fa-4x" aria-hidden = "true"></i>
+                        <FontAwesomeIcon icon={faLinkedin} />
                       </a>
                   </div>
             </Card.Footer>

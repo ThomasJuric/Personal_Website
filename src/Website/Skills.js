@@ -1,22 +1,45 @@
 import React from 'react';
 import './style.css';
 import Logo from "./forLogo.png";
-import {Navbar, Nav, Card, Col, Container, Row} from 'react-bootstrap';
-    
+import {Navbar, Nav, Card, Col, Container, Row, NavDropdown} from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
 const Skills = (props) => {
     
   return (
     <div>
-      <Navbar bg="dark" variant = "dark">
-      <Navbar.Brand href = "/"><img src = {Logo} alt = "Logo"/></Navbar.Brand>
-      <Nav className="mr-auto">
-        <Nav.Link href="/">About</Nav.Link>
-        <Nav.Link href="/skills">Skills</Nav.Link>
-        <Nav.Link href="/projects">Projects</Nav.Link>
-        <Nav.Link href="/experience">Experience</Nav.Link>
-        <Nav.Link href="/contact">Contact</Nav.Link>
-      </Nav>
-      </Navbar>
+      <div className = "largerNav">
+        <Navbar  bg="dark" variant = "dark">
+        <Navbar.Brand href = "/">TJ</Navbar.Brand>
+        <Nav className="mr-auto">
+          <Nav.Link href="/">About</Nav.Link>
+          <Nav.Link href="/skills">Skills</Nav.Link>
+          <Nav.Link href="/projects">Projects</Nav.Link>
+          <Nav.Link href="/experience">Experience</Nav.Link>
+          <Nav.Link href="/contact">Contact</Nav.Link>
+        </Nav>
+        </Navbar>
+      </div>
+
+      <div className = "mobileNav">
+        <Navbar bg="dark" variant="dark">
+            <Navbar.Brand href="/">TJ</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="mr-auto">
+                <NavDropdown title="Navigation" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/">About</NavDropdown.Item>
+                  <NavDropdown.Item href="/skills">Skills</NavDropdown.Item>
+                  <NavDropdown.Item href="/projects">Projects</NavDropdown.Item>
+                  <NavDropdown.Item href="/experience">Experience</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/contact">Contact Me</NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+        </div>
       <div className = "myCard">
           <Card className = "vertical-center horizontal-center mx-auto">
           <Card.Body>
@@ -25,7 +48,7 @@ const Skills = (props) => {
             <Container >
             <Row>
               <Col>
-                <h3 className = "text-muted" id = "TheLangagues">Languages</h3>
+                <h2 className = "text-muted" id = "TheLangagues">Languages</h2>
                 <ul id = "langList">
                     <li>C Language<img id = "langPhoto" alt = "C" src="https://img.icons8.com/color/48/000000/c-programming.png"/></li>
                     <li>Python <img id = "langPhoto" alt = "Python" src="https://img.icons8.com/color/48/000000/python.png"/></li>
@@ -36,7 +59,7 @@ const Skills = (props) => {
                 </ul>
               </Col>
               <Col className = "forBigger">
-                <h3 className = "text-muted" id = "toolsAndTech">Tools & Technologies</h3>
+                <h2 className = "text-muted" id = "toolsAndTech">Tools & Technologies</h2>
                 <ul id = "toolsList">
                     <li>React <img id = "langPhoto" src="https://img.icons8.com/nolan/64/react-native.png" alt = "React"/></li>
                     <li>NodeJS <img id = "langPhoto" src="https://img.icons8.com/color/48/000000/nodejs.png" alt = "NodeJS"/></li>
@@ -50,7 +73,7 @@ const Skills = (props) => {
             </Row>
             <Row className = "forSmaller">
               <Col>
-                <h3 className = "text-muted" id = "toolsAndTech">Tools & Technologies</h3>
+                <h2 className = "text-muted" id = "toolsAndTech">Tools & Technologies</h2>
                 <ul id = "toolsList">
                     <li>React <img id = "langPhoto" src="https://img.icons8.com/nolan/64/react-native.png" alt = "React"/></li>
                     <li>NodeJS <img id = "langPhoto" src="https://img.icons8.com/color/48/000000/nodejs.png" alt = "NodeJS"/></li>
@@ -67,17 +90,17 @@ const Skills = (props) => {
             <Card.Footer className = "mx-auto">
                   <div className="column">
                       <a href ="mailto:thomasjuric@gmail.com" display = "block" width = "2px">
-                          <i className="fa fa-envelope icon fa-4x"></i>
+                          <FontAwesomeIcon icon={["fa", "envelope"]} />
                       </a>
                   </div>
                   <div className = "column">
                       <a href ="https://github.com/ThomasJuric" display = "block" width = "2px">
-                          <i className="fa fa-github-square icon fa-4x" aria-hidden="true"></i>
+                        <FontAwesomeIcon icon={["fab", "github"]} />
                       </a>
                   </div>
                   <div className = "column">
                       <a href ="https://www.linkedin.com/in/thomasjuric" display = "block" width = "2px">
-                          <i className="fa fa-linkedin fa-4x" aria-hidden = "true"></i>
+                        <FontAwesomeIcon icon={faLinkedin} />
                       </a>
                   </div>
             </Card.Footer>

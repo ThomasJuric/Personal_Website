@@ -1,53 +1,73 @@
 import React from 'react';
 import Logo from "./forLogo.png";
-import {Navbar, Nav, Card, Row} from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { Envelope } from '@fortawesome/free-brands-svg-icons'
+
+
+import {Navbar, Nav, Card, Row, Container, NavDropdown} from 'react-bootstrap';
+
 const ContactMe = (props) => {
     
 return (
   <div>
-  <Navbar bg="dark" variant = "dark">
-  <Navbar.Brand href = "/"><img src = {Logo} alt = "Logo"/></Navbar.Brand>
-      <Nav className="mr-auto">
-        <Nav.Link href="/">About</Nav.Link>
-        <Nav.Link href="/skills">Skills</Nav.Link>
-        <Nav.Link href="/projects">Projects</Nav.Link>
-        <Nav.Link href="/experience">Experience</Nav.Link>
-        <Nav.Link href="/contact">Contact</Nav.Link>
-      </Nav>
-    </Navbar>
+  <div className = "largerNav">
+        <Navbar  bg="dark" variant = "dark">
+        <Navbar.Brand href = "/">TJ</Navbar.Brand>
+        <Nav className="mr-auto">
+          <Nav.Link href="/">About</Nav.Link>
+          <Nav.Link href="/skills">Skills</Nav.Link>
+          <Nav.Link href="/projects">Projects</Nav.Link>
+          <Nav.Link href="/experience">Experience</Nav.Link>
+          <Nav.Link href="/contact">Contact</Nav.Link>
+        </Nav>
+        </Navbar>
+      </div>
+
+      <div className = "mobileNav">
+        <Navbar bg="dark" variant="dark">
+            <Navbar.Brand href="/">TJ</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="mr-auto">
+                <NavDropdown title="Navigation" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/">About</NavDropdown.Item>
+                  <NavDropdown.Item href="/skills">Skills</NavDropdown.Item>
+                  <NavDropdown.Item href="/projects">Projects</NavDropdown.Item>
+                  <NavDropdown.Item href="/experience">Experience</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/contact">Contact Me</NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+        </div>
   <div className = "myCard">
-    <Card className = "mainCard vertical-center horizontal-center mx-auto">
-    <Card.Body>
-      <Card.Title className = "mx-auto" ><h2>Contact Me!</h2></Card.Title>
-      <hr className = "underline"></hr>
-        <Card.Text className = "textForCard">
-            Feel free to contact me if you have any questions.<br></br>The best way to get in touch is through E-Mail
-            
-        </Card.Text>
-        <Card className = "mainCard vertical-center horizontal-center mx-auto">
-        <Card.Body className = "text-center">
-        <div className = "contactInfo">
-                <Row>
-                    <div className = "column text-center">
-                        <a href ="mailto:thomasjuric@gmail.com" display = "block" width = "2px">
-                            <i className="fa fa-envelope icon fa-3x"></i>
-                        </a>
-                    </div>
-                    <div className = "column">
-                        <a href ="https://github.com/ThomasJuric" display = "block" width = "2px">
-                            <i className="fa fa-github-square icon fa-3x" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div className = "column">
-                        <a href ="https://www.linkedin.com/in/thomasjuric" display = "block" width = "2px">
-                            <i className="fa fa-linkedin fa-3x" aria-hidden = "true"></i>
-                        </a>
-                    </div>
-                </Row>
-                </div>
-            </Card.Body>
-        </Card>
-      </Card.Body>
+    <Card className = "vertical-center horizontal-center mx-auto">
+        <Card.Body >
+          <Card.Title className = "mx-auto" ><h1>Contact Me</h1></Card.Title>
+          <hr className = "underline"></hr>
+            <p className = "contactBox">Feel free to contact me if you have any questions.<br /> The best way to get in touch is through <a href = "mailto:thomasjuric@gmail.com">E-Mail</a> </p>
+        </Card.Body>
+            <Card.Footer className = "mx-auto">
+              <div className="column">
+                      <a href ="mailto:thomasjuric@gmail.com" display = "block" width = "2px">
+                          <FontAwesomeIcon icon={["fa", "envelope"]} />
+                      </a>
+                  </div>
+                  <div className = "column">
+                      <a href ="https://github.com/ThomasJuric" display = "block" width = "2px">
+                        <FontAwesomeIcon icon={["fab", "github"]} />
+                      </a>
+                  </div>
+                  <div className = "column">
+                      <a href ="https://www.linkedin.com/in/thomasjuric" display = "block" width = "2px">
+                        <FontAwesomeIcon icon={faLinkedin} />
+                      </a>
+                  </div>
+            </Card.Footer>
+      
     </Card>
   </div>  
   </div>  
