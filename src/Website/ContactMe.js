@@ -1,12 +1,9 @@
 import React from 'react';
-import Logo from "./forLogo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { Envelope } from '@fortawesome/free-brands-svg-icons'
 
 
-import {Navbar, Nav, Card, Row, Container, NavDropdown} from 'react-bootstrap';
+import {Navbar, Nav, Card, NavDropdown} from 'react-bootstrap';
 
 const ContactMe = (props) => {
     
