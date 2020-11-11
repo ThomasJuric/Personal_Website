@@ -13,9 +13,9 @@
     width: 100%;
 }
 body {
-	background: linear-gradient(90deg, #742712, #292727, #032b50, #128d70);
+	background: linear-gradient(-45deg, #b62727, #502020, #032b50, #128d70);
 	background-size: 400% 400%;
-	animation: gradient 75s ease infinite;
+	animation: gradient 60s ease infinite;
 }
 
 @keyframes gradient {
@@ -39,11 +39,12 @@ body {
 p, li {
     font-size: 20px;
 }
-.myCard {
-    padding-top: 2.5%;
-}
+
 .contactBox {
     text-align: center;    
+}
+.contactMe {
+    margin-left: 10px;
 }
 h1 {
     font-family: 'Roboto', sans-serif;
@@ -61,6 +62,9 @@ h3 {
     padding-left: 10px;
     z-index: 4;
     font-size: 4em;
+}
+.icon { 
+    color: black;
 }
 /* .underline {
     color: white;
@@ -112,17 +116,18 @@ h3 {
 .theProjBtn {
     height: 50px;
     text-align: center;
-    background-color: #FFFFFF;
-    border-color:#0D0D0D;
+    background-color: #D88C5A;
+    border-color:#000000;
     margin-left: 2.5%;
     width: 50%;
+
 }
 
 .underlineProj {
     background-color: rgba(252, 236, 217, 0.288);
 }
 .btnText {
-    color: #0D0D0D;
+    color: #000000;
     vertical-align: middle;
 }
 

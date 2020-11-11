@@ -45,29 +45,28 @@ const About = (props) => {
             <Card.Subtitle className="mb-3 text-muted subtitle">Computer Science Student</Card.Subtitle>
             <hr className = "underline"></hr>
             <Card.Text className = "cardText">
-              Hey, my name is Thomas and I'm currently a second-year student studying towards a Bachelor of Computing Degree, 
-              with a major in Computer Science. This is my personal website, where I plan to display my projects, skills, 
+              Hey, my name is Thomas and I'm currently a third-year student studying towards a <b>Bachelor of Computing Degree</b>, 
+              with a major in Computer Science. This is my personal website, where I display my projects, skills, 
               experience, and anything else about me. I developed this website using React as a way to increase and showcase my web 
               development skillset.
             </Card.Text>
             <Card.Text className = "cardText">
-              Aside from being a student, I enjoy playing basketball, keeping up with sports, hanging out with friends, and watching Netflix. 
-              If you have any questions, feel free to shoot me an E-Mail.
+              If you have any questions, feel free to shoot me an <a href = "mailto: thomasjuric@gmail.com">E-Mail.</a>
             </Card.Text>
           </Card.Body>
             <Card.Footer className = "mx-auto">
               <div className="column">
-                      <a href ="mailto:thomasjuric@gmail.com" display = "block" width = "2px">
+                      <a className = "icon" href ="mailto:thomasjuric@gmail.com" display = "block" width = "2px">
                           <FontAwesomeIcon icon={["fa", "envelope"]} />
                       </a>
                   </div>
                   <div className = "column">
-                      <a href ="https://github.com/ThomasJuric" display = "block" width = "2px">
+                      <a className = "icon" href ="https://github.com/ThomasJuric" display = "block" width = "2px">
                         <FontAwesomeIcon icon={["fab", "github"]} />
                       </a>
                   </div>
                   <div className = "column">
-                      <a href ="https://www.linkedin.com/in/thomasjuric" display = "block" width = "2px">
+                      <a className = "icon" href ="https://www.linkedin.com/in/thomasjuric" display = "block" width = "2px">
                         <FontAwesomeIcon icon={faLinkedin} />
                       </a>
                   </div>

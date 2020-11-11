@@ -46,14 +46,14 @@ const Projects = (props) => {
             <Row>
                 <Container>
                     <h3>Website Training & Support Specialist</h3>
-                    <Card.Subtitle className="mb-3 text-muted subtitle">August 2020 - January 2021 • Remote</Card.Subtitle>
+                    <Card.Subtitle className="mb-3 text-muted subtitle">August 2020 - January 2021 • University of Guelph</Card.Subtitle>
                     <div>
                         <ul>
                             <li>Developed & maintained public and developmental websites under the University of Guelph domain.</li>
                             <li>Used tools such as HTML, CSS, Drupal, Pantheon, SharePoint, & Gatsby to develop and improve existing websites.</li>
                             <li>Created documentation to construct client training for tools such as SharePoint.</li>
                             <li>Carried out Weekly Trainings for Clients for the Drupal CMS to assist them with learning the necessary tools to make their own site edits.</li>
-                            <li>Participated in Weekly Agile & Scrum Meeting with the team to divide up work ahead.</li>
+                            <li>Participated in Weekly Agile & Scrum Meetings with the team to divide up work ahead.</li>
                             {/* <li>Assisted with the onboarding process with the new Co-op student.</li> */}
                         </ul>
                     </div>
@@ -66,17 +66,17 @@ const Projects = (props) => {
           </Card.Body>
             <Card.Footer className = "mx-auto">
                 <div className="column">
-                      <a href ="mailto:thomasjuric@gmail.com" display = "block" width = "2px">
+                      <a className = "icon" href ="mailto:thomasjuric@gmail.com" display = "block" width = "2px">
                           <FontAwesomeIcon icon={["fa", "envelope"]} />
                       </a>
                   </div>
                   <div className = "column">
-                      <a href ="https://github.com/ThomasJuric" display = "block" width = "2px">
+                      <a className = "icon" href ="https://github.com/ThomasJuric" display = "block" width = "2px">
                         <FontAwesomeIcon icon={["fab", "github"]} />
                       </a>
                   </div>
                   <div className = "column">
-                      <a href ="https://www.linkedin.com/in/thomasjuric" display = "block" width = "2px">
+                      <a className = "icon" href ="https://www.linkedin.com/in/thomasjuric" display = "block" width = "2px">
                         <FontAwesomeIcon icon={faLinkedin} />
                       </a>
                   </div>

@@ -88,17 +88,17 @@ const Skills = (props) => {
           </Card.Body>
             <Card.Footer className = "mx-auto">
                   <div className="column">
-                      <a href ="mailto:thomasjuric@gmail.com" display = "block" width = "2px">
+                      <a className = "icon" href ="mailto:thomasjuric@gmail.com" display = "block" width = "2px">
                           <FontAwesomeIcon icon={["fa", "envelope"]} />
                       </a>
                   </div>
                   <div className = "column">
-                      <a href ="https://github.com/ThomasJuric" display = "block" width = "2px">
+                      <a className = "icon" href ="https://github.com/ThomasJuric" display = "block" width = "2px">
                         <FontAwesomeIcon icon={["fab", "github"]} />
                       </a>
                   </div>
                   <div className = "column">
-                      <a href ="https://www.linkedin.com/in/thomasjuric" display = "block" width = "2px">
+                      <a className = "icon" href ="https://www.linkedin.com/in/thomasjuric" display = "block" width = "2px">
                         <FontAwesomeIcon icon={faLinkedin} />
                       </a>
                   </div>
