@@ -53,7 +53,7 @@ const Projects = (props) => {
                   
                 </Col>
                 <Row>
-                <Button className = "theProjBtn text-center" href ="https://tic-tac-thomas.netlify.app/" >
+                <Button className = "theProjBtn text-center" href ="https://play-tictactoegame.netlify.app/" >
                     <span className = "btnText">Click Here to Try the game</span>
                   </Button>
                 </Row>
