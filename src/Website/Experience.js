@@ -49,7 +49,7 @@ const Projects = (props) => {
                     <Card.Subtitle className="mb-3 text-muted subtitle">August 2020 - January 2021 • University of Guelph</Card.Subtitle>
                     <div>
                         <ul>
-                            <li>Developed & maintained public and developmental websites under the University of Guelph domain.</li>
+                            <li>Developed & maintained public and development websites under the University of Guelph domain.</li>
                             <li>Used tools such as HTML, CSS, Drupal, Pantheon, SharePoint, & Gatsby to develop and improve existing websites.</li>
                             <li>Created documentation to construct client training for tools such as SharePoint.</li>
                             <li>Carried out Weekly Trainings for Clients for the Drupal CMS to assist them with learning the necessary tools to make their own site edits.</li>
