@@ -45,7 +45,7 @@ const Projects = (props) => {
             <hr className = "underline"></hr>
             <Row>
                 <Container>
-                    <h3>Website Training & Support Specialist</h3>
+                    <h3>Website Support Developer</h3>
                     <Card.Subtitle className="mb-3 text-muted subtitle">August 2020 - January 2021 • University of Guelph</Card.Subtitle>
                     <div>
                         <ul>
@@ -54,7 +54,7 @@ const Projects = (props) => {
                             <li>Created documentation to construct client training for tools such as SharePoint.</li>
                             <li>Carried out Weekly Trainings for Clients for the Drupal CMS to assist them with learning the necessary tools to make their own site edits.</li>
                             <li>Participated in Weekly Agile & Scrum Meetings with the team to divide up work ahead.</li>
-                            {/* <li>Assisted with the onboarding process with the new Co-op student.</li> */}
+                            <li>Assisted with the onboarding process with the new Co-op student.</li>
                         </ul>
                     </div>
                 </Container>
