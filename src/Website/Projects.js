@@ -119,7 +119,7 @@ const Projects = (props) => {
           </Card.Body>
             <Card.Footer className = "mx-auto">
               <div  className="column">
-                      <a className = "icon" href ="mailto:thomasjuric@gmail.com" display = "block" width = "2px">
+                      <a className = "icon" href ="mailto:tjuric@uoguelph.ca" display = "block" width = "2px">
                           <FontAwesomeIcon icon={["fa", "envelope"]} />
                       </a>
                   </div>

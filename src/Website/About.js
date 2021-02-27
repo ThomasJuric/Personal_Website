@@ -51,12 +51,12 @@ const About = (props) => {
               development skillset.
             </Card.Text>
             <Card.Text className = "cardText">
-              If you have any questions, feel free to shoot me an <a href = "mailto: thomasjuric@gmail.com">E-Mail.</a>
+              If you have any questions, feel free to shoot me an <a href = "mailto: tjuric@uoguelph.ca">E-Mail.</a>
             </Card.Text>
           </Card.Body>
             <Card.Footer className = "mx-auto">
               <div className="column">
-                      <a className = "icon" href ="mailto:thomasjuric@gmail.com" display = "block" width = "2px">
+                      <a className = "icon" href ="mailto:tjuric@uoguelph.ca" display = "block" width = "2px">
                           <FontAwesomeIcon icon={["fa", "envelope"]} />
                       </a>
                   </div>

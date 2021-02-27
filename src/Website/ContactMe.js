@@ -45,11 +45,11 @@ return (
         <Card.Body >
           <Card.Title className = "mx-auto" ><h1>Contact Me</h1></Card.Title>
           <hr className = "underline"></hr>
-            <p className = "contactBox">Feel free to contact me if you have any questions.<br /> The best way to get in touch is through <a href = "mailto:thomasjuric@gmail.com">E-Mail</a> </p>
+            <p className = "contactBox">Feel free to contact me if you have any questions.<br /> The best way to get in touch is through <a href = "mailto:tjuric@uoguelph.ca">E-Mail</a> </p>
         </Card.Body>
             <Card.Footer className = "mx-auto">
               <div className="column">
-                      <a className = "icon"  href ="mailto:thomasjuric@gmail.com" display = "block" width = "2px">
+                      <a className = "icon"  href ="mailto:tjuric@uoguelph.ca" display = "block" width = "2px">
                           <FontAwesomeIcon icon={["fa", "envelope"]} />
                       </a>
                   </div>
