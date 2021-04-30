@@ -42,7 +42,24 @@ const Projects = (props) => {
           <Card className = "vertical-center horizontal-center mx-auto">
           <Card.Body>
             <Card.Title ><h1>Projects</h1></Card.Title>
-            
+            {/* <hr className = "underline"></hr>
+            <Row>
+              <Container>
+                <Col>
+                  <h3>Tic-Tac-Toe Web Application</h3>
+                  <p className = "projectDesc">
+                    This is a tic-tac-toe web application that I developed using HTML, CSS, and JavaScript. I used the minimax algorithm to determine the best possible move for the computer, so it's pretty hard.
+                  </p>
+                  
+                </Col>
+                <Row>
+                <Button className = "theProjBtn text-center" href ="https://play-tictactoegame.netlify.app/" >
+                    <span className = "btnText">Click Here to Try the game</span>
+                  </Button>
+                </Row>
+              </Container>
+                
+            </Row> */}
             {/* <hr className = "underlineProj"></hr>
             <Row>
               <Container>
